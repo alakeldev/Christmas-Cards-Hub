@@ -116,7 +116,7 @@
 /* ------------------- Hero Section ------------------- */
 .hero-section {
   min-height: 100vh;
-  background: url("../images/christmas-hero.jpg") center / cover no-repeat;
+  background: url("../images/christmas-background-2.png") center 70% / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
