@@ -1,3 +1,12 @@
+/* ------------------- Layout Visualisation ------------------- */
+
+/* .container div,
+.container-fluid div,
+.col {
+  border: 1px solid rgba(0, 0, 0, 01);
+} */
+
+
 /* ------------------- Navbar Brand & Tree Emoji ------------------- */
 .navbar-brand {
   font-weight: 600;
@@ -12,13 +21,23 @@
 }
 
 @media (min-width: 768px) {
-  .navbar-brand { font-size: 1.5rem; }
-  .navbar-brand::before { font-size: 2rem; }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand::before {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1200px) {
-  .navbar-brand { font-size: 1.75rem; }
-  .navbar-brand::before { font-size: 2.5rem; }
+  .navbar-brand {
+    font-size: 1.75rem;
+  }
+
+  .navbar-brand::before {
+    font-size: 2.5rem;
+  }
 }
 
 /* ------------------- Navbar Links ------------------- */
@@ -28,15 +47,37 @@
   transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-item:nth-child(1) .nav-link { color: #0B6623; }
-.navbar-nav .nav-item:nth-child(2) .nav-link { color: #FF0000; }
-.navbar-nav .nav-item:nth-child(3) .nav-link { color: #FFD700; }
-.navbar-nav .nav-item:nth-child(4) .nav-link { color: #90EE90; }
+.navbar-nav .nav-item:nth-child(1) .nav-link {
+  color: #0B6623;
+}
 
-.navbar-nav .nav-item:nth-child(1) .nav-link:hover { color: #075918; }
-.navbar-nav .nav-item:nth-child(2) .nav-link:hover { color: #B20000; }
-.navbar-nav .nav-item:nth-child(3) .nav-link:hover { color: #FFC107; }
-.navbar-nav .nav-item:nth-child(4) .nav-link:hover { color: #32CD32; }
+.navbar-nav .nav-item:nth-child(2) .nav-link {
+  color: #FF0000;
+}
+
+.navbar-nav .nav-item:nth-child(3) .nav-link {
+  color: #FFD700;
+}
+
+.navbar-nav .nav-item:nth-child(4) .nav-link {
+  color: #90EE90;
+}
+
+.navbar-nav .nav-item:nth-child(1) .nav-link:hover {
+  color: #075918;
+}
+
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover {
+  color: #B20000;
+}
+
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover {
+  color: #FFC107;
+}
+
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover {
+  color: #32CD32;
+}
 
 .navbar-nav .nav-link.active {
   font-weight: 600;
@@ -57,66 +98,145 @@
   width: 100%;
 }
 
-.navbar-nav .nav-item:nth-child(1) .nav-link.active::after { background-color: #0B6623; }
-.navbar-nav .nav-item:nth-child(2) .nav-link.active::after { background-color: #FF0000; }
-.navbar-nav .nav-item:nth-child(3) .nav-link.active::after { background-color: #FFD700; }
-.navbar-nav .nav-item:nth-child(4) .nav-link.active::after { background-color: #90EE90; }
+.navbar-nav .nav-item:nth-child(1) .nav-link.active::after {
+  background-color: #0B6623;
+}
 
-@media (min-width: 768px) { .navbar-nav .nav-link { font-size: 1rem; } }
-@media (min-width: 1200px) { .navbar-nav .nav-link { font-size: 1.1rem; } }
+.navbar-nav .nav-item:nth-child(2) .nav-link.active::after {
+  background-color: #FF0000;
+}
+
+.navbar-nav .nav-item:nth-child(3) .nav-link.active::after {
+  background-color: #FFD700;
+}
+
+.navbar-nav .nav-item:nth-child(4) .nav-link.active::after {
+  background-color: #90EE90;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+}
 
 @media (max-width: 991px) {
-  .navbar-nav { align-items: center; }
+  .navbar-nav {
+    align-items: center;
+  }
 }
 
 /* ------------------- Footer Styles ------------------- */
-.footer-title { font-size: 1.1rem; font-weight: 600; }
-.footer-text { font-size: 0.9rem; }
+.footer-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+}
 
 .footer-icon {
   font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.footer-icon:nth-child(1) { color: #0B6623; }
-.footer-icon:nth-child(2) { color: #FF0000; }
-.footer-icon:nth-child(3) { color: #FFD700; }
-.footer-icon:nth-child(4) { color: #90EE90; }  
+.footer-icon:nth-child(1) {
+  color: #0B6623;
+}
 
-.footer-icon:nth-child(1):hover { color: #075918; transform: translateY(-3px); }
-.footer-icon:nth-child(2):hover { color: #B20000; transform: translateY(-3px); }
-.footer-icon:nth-child(3):hover { color: #FFC107; transform: translateY(-3px); }
-.footer-icon:nth-child(4):hover { color: #32CD32; transform: translateY(-3px); }
+.footer-icon:nth-child(2) {
+  color: #FF0000;
+}
+
+.footer-icon:nth-child(3) {
+  color: #FFD700;
+}
+
+.footer-icon:nth-child(4) {
+  color: #90EE90;
+}
+
+.footer-icon:nth-child(1):hover {
+  color: #075918;
+  transform: translateY(-3px);
+}
+
+.footer-icon:nth-child(2):hover {
+  color: #B20000;
+  transform: translateY(-3px);
+}
+
+.footer-icon:nth-child(3):hover {
+  color: #FFC107;
+  transform: translateY(-3px);
+}
+
+.footer-icon:nth-child(4):hover {
+  color: #32CD32;
+  transform: translateY(-3px);
+}
 
 @media (min-width: 768px) {
-  .footer-title { font-size: 1.25rem; }
-  .footer-text { font-size: 1rem; }
-  .footer-icon { font-size: 2rem; }
+  .footer-title {
+    font-size: 1.25rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+
+  .footer-icon {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1200px) {
-  .footer-title { font-size: 1.5rem; }
-  .footer-text { font-size: 1.125rem; }
-  .footer-icon { font-size: 2.5rem; }
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-text {
+    font-size: 1.125rem;
+  }
+
+  .footer-icon {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 767px) {
-  .footer .row { text-align: center; }
+  .footer .row {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  .footer .row { text-align: left; }
+  .footer .row {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1200px) {
-  .footer .col-md-6:first-child { text-align: left; }
-  .footer .col-md-6:last-child { text-align: right; }
+  .footer .col-md-6:first-child {
+    text-align: left;
+  }
+
+  .footer .col-md-6:last-child {
+    text-align: right;
+  }
 }
 
 /* ------------------- Hero Section ------------------- */
 .hero-section {
   min-height: 100vh;
-  background: url("../images/christmas-background-2.png") center 70% / cover no-repeat;
+  background: url("../images/christmas-background-2.png") center 7% / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +260,8 @@
 }
 
 .cards-section .text-center h2 {
-  color: #FF0000; /* red */
+  color: #FF0000;
+  /* red */
   font-weight: 700;
 }
 
@@ -185,14 +306,388 @@
     transform: translateY(-10vh) rotate(0deg);
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   80% {
     opacity: 1;
   }
+
   100% {
     transform: translateY(110vh) rotate(360deg);
     opacity: 0;
+  }
+}
+
+
+/* ------------------- Editable Card Page Styles ------------------- */
+
+/* ---- Card ---- */
+
+#card-container {
+  position: relative;
+  /* Ensure the container acts as the reference point */
+  /* left: calc(50% - 150px); */
+  overflow: hidden;
+  /* Prevent any part of the image from being visible outside the container */
+  height: 200px;
+  width: 300px;
+  background: url(../images/cards/input-card/card-background.jpg) center / cover no-repeat;
+}
+
+.merry-christmas {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 2.3rem;
+  color: #801414;
+  text-shadow: 2px 2px 4px rgba(206, 243, 220, 0.7);
+  z-index: 1;
+}
+
+.input-text {
+  font-family: 'Mountains of Christmas';
+  font-size: 1rem;
+  color: #801414;
+  margin-top: 7%;
+  animation: appearText 20s linear forwards;
+}
+
+@keyframes appearText {
+  0% {
+    opacity: 0;
+  }
+
+  39% {
+    opacity: 0;
+  }
+
+  43% {
+    opacity: 1;
+  }
+}
+
+.snow1 {
+  position: absolute;
+  top: 7%;
+  left: 15%;
+  font-size: 12px;
+  color: white;
+  opacity: 0.8;
+  animation: spin 13s linear infinite;
+  z-index: 10;
+}
+
+.snow2 {
+  position: absolute;
+  top: 8%;
+  right: 18%;
+  font-size: 17px;
+  color: white;
+  opacity: 0.7;
+  animation: spin 12s linear infinite;
+  z-index: 10;
+}
+
+.snow3 {
+  position: absolute;
+  top: 12%;
+  left: 55%;
+  font-size: 9px;
+  color: white;
+  opacity: 0.6;
+  animation: spin 11s linear infinite;
+  z-index: 10;
+}
+
+.snow4 {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  font-size: 12px;
+  color: white;
+  opacity: 0.9;
+  animation: spin 12s linear infinite;
+}
+
+.snow5 {
+  position: absolute;
+  top: 26%;
+  left: 39%;
+  font-size: 12px;
+  color: white;
+  opacity: 0.8;
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.people-and-tree {
+  position: absolute;
+  /* Allows precise positioning within the container */
+  top: 65%;
+  /* Center vertically within the container */
+  right: -100px;
+  /* Start fully outside of the container on the right */
+  transform: translateY(-50%) scale(0.5);
+  /* Adjust for perfect vertical centering */
+  animation: moveTreeOut 20s linear forwards;
+  /* Use forwards to keep the tree out of frame at the end */
+}
+
+@keyframes moveTreeOut {
+  0% {
+    right: -460px;
+    /* Start just outside the right edge of the container */
+  }
+  10% {
+    top: 62%;
+  }
+  20% {
+    top: 65%;
+  }
+  30% {
+    top: 62%;
+  }
+  40% {
+    top: 65%;
+  }
+  50% {
+    top: 62%;
+  }
+  60% {
+    top: 65%;
+  }
+  70% {
+    top: 62%;
+  }
+  80% {
+    top: 65%;
+  }
+  90% {
+    top: 62%;
+  }
+  100% {
+    right: 100%;
+    /* Move past the left edge of the container */
+  }
+}
+
+/* ---- Form ---- */
+.form-control {
+  width: 250px !important;
+
+}
+
+.name-input-form .form-caption {
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  width: 350px !important;
+}
+
+@media (min-width: 576px) {
+  #card-container {
+    position: relative;
+    /* Ensure the container acts as the reference point */
+    height: 300px;
+    width: 450px;
+  }
+
+  .merry-christmas {
+    font-size: 3.4rem;
+  }
+
+  .input-text {
+  font-size: 1.5rem;
+  
+}
+
+  .snow1 {
+    font-size: 18px;
+  }
+
+  .snow2 {
+    font-size: 25px;
+  }
+
+  .snow3 {
+    font-size: 14px;
+  }
+
+  .snow4 {
+    font-size: 18px;
+  }
+
+  .snow5 {
+    font-size: 18px;
+  }
+
+  .people-and-tree {
+    position: absolute;
+    /* Allows precise positioning within the container */
+    top: 65%;
+    /* Center vertically within the container */
+    right: -100px;
+    /* Start fully outside of the container on the right */
+    transform: translateY(-50%) scale(0.75);
+    /* Adjust for perfect vertical centering */
+    animation: moveTreeOut 18s linear forwards;
+    /* Use forwards to keep the tree out of frame at the end */
+  }
+
+  @keyframes moveTreeOut {
+    0% {
+      right: -550px;
+      /* Start just outside the right edge of the container */
+    }
+
+    10% {
+      top: 62%;
+    }
+
+    20% {
+      top: 65%;
+    }
+
+    30% {
+      top: 62%;
+    }
+
+    40% {
+      top: 65%;
+    }
+
+    50% {
+      top: 62%;
+    }
+
+    60% {
+      top: 65%;
+    }
+
+    70% {
+      top: 62%;
+    }
+
+    80% {
+      top: 65%;
+    }
+
+    90% {
+      top: 62%;
+    }
+
+    100% {
+      right: 100%;
+      /* Move past the left edge of the container */
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  #card-container {
+    position: relative;
+    /* Ensure the container acts as the reference point */
+    height: 400px;
+    width: 600px;
+  }
+
+  .merry-christmas {
+    font-size: 4.5rem;
+  }
+
+  .input-text {
+  font-size: 2rem;
+  
+}
+
+  .snow1 {
+    font-size: 24px;
+  }
+
+  .snow2 {
+    font-size: 34px;
+  }
+
+  .snow3 {
+    font-size: 19px;
+  }
+
+  .snow4 {
+    font-size: 24px;
+  }
+
+  .snow5 {
+    font-size: 24px;
+  }
+
+  .people-and-tree {
+    position: absolute;
+    /* Allows precise positioning within the container */
+    top: 65%;
+    /* Center vertically within the container */
+    right: -100px;
+    /* Start fully outside of the container on the right */
+    transform: translateY(-50%);
+    /* Adjust for perfect vertical centering */
+    animation: moveTreeOut 18s linear forwards;
+    /* Use forwards to keep the tree out of frame at the end */
+  }
+
+  @keyframes moveTreeOut {
+    0% {
+      right: -610px;
+      /* Start just outside the right edge of the container */
+    }
+
+    10% {
+      top: 62%;
+    }
+
+    20% {
+      top: 65%;
+    }
+
+    30% {
+      top: 62%;
+    }
+
+    40% {
+      top: 65%;
+    }
+
+    50% {
+      top: 62%;
+    }
+
+    60% {
+      top: 65%;
+    }
+
+    70% {
+      top: 62%;
+    }
+
+    80% {
+      top: 65%;
+    }
+
+    90% {
+      top: 62%;
+    }
+
+    100% {
+      right: 100%;
+      /* Move past the left edge of the container */
+    }
   }
 }
