@@ -24,26 +24,16 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
-            Christmas Cards Hub
-        </a>
+        <a class="navbar-brand fw-bold" href="index.html">Christmas Cards Hub</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="mainNavbar">
           <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">EVENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT US</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
           </ul>
         </div>
       </div>
@@ -51,7 +41,37 @@
   </header>
 
   <main class="flex-grow-1">
-    <!-- Your page content goes here -->
+    <!-- Hero Section -->
+    <section class="hero-section position-relative text-center text-white">
+      <div class="hero-overlay"></div>
+      <div class="container position-relative hero-content d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh;">
+        <h1 class="display-5 fw-bold mb-3">Share the Magic of Christmas</h1>
+        <p class="lead mb-4">Discover, personalize, and send beautiful Christmas cards to your loved ones.</p>
+        <a href="#our-magical-cards" class="btn btn-success btn-lg px-4">Explore Cards</a>
+      </div>
+    </section>
+
+    <!-- Our Cards Section -->
+    <section id="our-magical-cards" class="cards-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-danger">Our Magical Cards</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-4">
+            <a href="card1.html" class="text-decoration-none">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="assets/images/card-1.jpg" class="card-img-top" alt="Classic Christmas Card">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Classic Christmas</h5>
+                  <p class="card-text small">Traditional and elegant designs to spread holiday cheer</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -60,12 +80,8 @@
       <div class="row align-items-center gy-4">
         <div class="col-md-6 text-center text-md-start">
           <h5 class="footer-title mb-3">🎄 Christmas Cards Hub</h5>
-          <p class="footer-text mb-0">
-            A simple and joyful platform to explore, personalize, and share
-            beautiful Christmas cards with your loved ones.
-          </p>
+          <p class="footer-text mb-0">A simple and joyful platform to explore, personalize, and share beautiful Christmas cards with your loved ones.</p>
         </div>
-
         <div class="col-md-6 text-center text-md-end">
           <h5 class="footer-title mb-3">Follow Us</h5>
           <div class="d-flex justify-content-center justify-content-md-end gap-4">
@@ -76,20 +92,12 @@
           </div>
         </div>
       </div>
-
       <hr class="border-secondary my-4">
-
-      <div class="text-center small">
-        © 2025 Christmas Cards Hub. All rights reserved.
-      </div>
+      <div class="text-center small">© 2025 Christmas Cards Hub. All rights reserved.</div>
     </div>
   </footer>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
-  ></script>
-  <script src="assets/js/main.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
