@@ -1,4 +1,4 @@
-/* Navbar Brand & Tree Emoji */
+/* ------------------- Navbar Brand & Tree Emoji ------------------- */
 .navbar-brand {
   font-weight: 600;
   font-size: 1.25rem;
@@ -21,11 +21,11 @@
   .navbar-brand::before { font-size: 2.5rem; }
 }
 
-/* Navbar Links */
+/* ------------------- Navbar Links ------------------- */
 .navbar-nav .nav-link {
   color: white;
   font-size: 0.95rem;
-  transition: color 1.2s;
+  transition: color 0.9s;
 }
 
 .navbar-nav .nav-link.active {
@@ -39,19 +39,26 @@
 
 @media (min-width: 768px) { .navbar-nav .nav-link { font-size: 1rem; } }
 @media (min-width: 1200px) { .navbar-nav .nav-link { font-size: 1.1rem; } }
-
-/* Center links on mobile toggler */
 @media (max-width: 991px) { .navbar-nav { align-items: center; } }
 
-/* Footer Styles */
+/* ------------------- Footer Styles ------------------- */
 .footer-title { font-size: 1.1rem; font-weight: 600; }
 .footer-text { font-size: 0.9rem; }
+
 .footer-icon {
-  color: #0B6623;
   font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
-.footer-icon:hover { color: #075918; transform: translateY(-3px); }
+
+.footer-icon:nth-child(1) { color: #0B6623; }  /* Facebook - dark green */
+.footer-icon:nth-child(2) { color: #FF0000; }  /* Instagram - red */
+.footer-icon:nth-child(3) { color: #FFD700; }  /* Twitter - yellow */
+.footer-icon:nth-child(4) { color: #90EE90; }  /* Email - light green */
+
+.footer-icon:nth-child(1):hover { color: #075918; transform: translateY(-3px); }
+.footer-icon:nth-child(2):hover { color: #B20000; transform: translateY(-3px); }
+.footer-icon:nth-child(3):hover { color: #FFC107; transform: translateY(-3px); }
+.footer-icon:nth-child(4):hover { color: #32CD32; transform: translateY(-3px); }
 
 @media (min-width: 768px) {
   .footer-title { font-size: 1.25rem; }
@@ -65,7 +72,7 @@
   .footer-icon { font-size: 2.5rem; }
 }
 
-/* Footer Alignment */
+/* ------------------- Footer Alignment ------------------- */
 @media (max-width: 767px) { .footer .row { text-align: center; } }
 @media (min-width: 768px) and (max-width: 1199px) { .footer .row { text-align: left; } }
 @media (min-width: 1200px) {
