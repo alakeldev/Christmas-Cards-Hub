@@ -40,5 +40,17 @@ playBtn.addEventListener('click' , function() {
       messageScreen.style.opacity = '1';
 }
   }
+  const backBtn = document.getElementById("back-btn");
+  backBtn.addEventListener('click' , function() {
+    sound.pause();
+    sound.currentTime = 0;
+    const card = document.querySelector('.card');
+    const messageScreen = document.getElementById('message-screen');
+    if (card && messageScreen) {
+      card.style.display = 'block';
+      messageScreen.style.opacity = '0';
+      
+    }
+  } )
 });
 });
