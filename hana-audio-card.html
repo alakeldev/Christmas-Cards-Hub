@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link
+    <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
     crossorigin="anonymous"
   >
+
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="assets/css/main.css">
-
-  <title>HOME - Christmas Cards Hub</title>
+    <title>Merry Christmas</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-  <!-- Header -->
-  <header>
+     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">Christmas Cards Hub</a>
@@ -33,60 +32,39 @@
             <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
             <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-            <li class="nav-item"><a class="nav-link" href="editable-card.html">CONTACT US</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
           </ul>
         </div>
-      </div>
+      </div> 
     </nav>
   </header>
 
-  <main class="flex-grow-1">
-    <!-- Hero Section -->
-    <section class="hero-section position-relative text-center text-white">
-      <div class="hero-overlay"></div>
-      <div class="container position-relative hero-content d-flex justify-content-center align-items-center flex-column" style="min-height: 100vh;">
-        <h1 class="display-5 fw-bold mb-3">Share the Magic of Christmas</h1>
-        <p class="lead mb-4">Discover, personalize, and send beautiful Christmas cards to your loved ones.</p>
-        <a href="#our-magical-cards" class="btn btn-success btn-lg px-4">Explore Cards</a>
-      </div>
-    </section>
+  <!-- card section -->
 
-    <!-- Our Cards Section -->
-    <section id="our-magical-cards" class="cards-section py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold text-danger">Our Magical Cards</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <a href="card1.html" class="text-decoration-none">
-              <div class="card h-100 shadow-sm border-0">
-                <img src="assets/images/card-1.jpg" class="card-img-top" alt="Classic Christmas Card">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Classic Christmas</h5>
-                  <p class="card-text small">Traditional and elegant designs to spread holiday cheer</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <a href="card1.html" class="text-decoration-none">
-              <div class="card h-100 shadow-sm border-0">
-                <img src="assets/images/card-1.jpg" class="card-img-top" alt="Classic Christmas Card">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Classic Christmas</h5>
-                  <p class="card-text small">Traditional and elegant designs to spread holiday cheer</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light mt-auto">
+ <div class="container-hana mx-auto" id="front-card">
+  <div class="screen-message" id="message-screen">
+    <h1>Merry Christmas</h1>
+    <p>May your special day is filled with love, happiness and joy</p>git
+    <button id="back-btn" class="btn btn-light">Back</button>
+    
+     
+  </div>
+    <!-- front card -->
+    <div class="card active">
+  <div class="card-img position-relative">
+    <img src="assets/images/doll-figures.jpg" class="img-fluid  w-100 h-100 overflow-hidden" alt="doll-figures">
+    <button id="play-btn" class="btn btn-light position-absolute">▶</button> 
+   
+  </div>
+</div>
+   
+ </div>
+
+ 
+
+<!-- footer -->
+ <footer class="bg-dark text-light mt-auto">
     <div class="container py-5">
       <div class="row align-items-center gy-4">
         <div class="col-md-6 text-center text-md-start">
@@ -107,7 +85,7 @@
       <div class="text-center small">© 2025 Christmas Cards Hub. All rights reserved.</div>
     </div>
   </footer>
-
+<!-- bootstrap, js scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
 </body>
