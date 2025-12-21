@@ -23,8 +23,9 @@
 
 /* Navbar Links */
 .navbar-nav .nav-link {
+  color: white;
   font-size: 0.95rem;
-  transition: color 0.3s;
+  transition: color 1.2s;
 }
 
 .navbar-nav .nav-link.active {
