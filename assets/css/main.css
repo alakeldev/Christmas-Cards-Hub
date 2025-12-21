@@ -195,8 +195,6 @@
     transform: translateY(110vh) rotate(360deg);
     opacity: 0;
   }
-<<<<<<< Updated upstream
-=======
 }
 
 
@@ -323,7 +321,7 @@
 
 @keyframes moveTreeOut {
   0% {
-    right: -460px;
+    right: -480px;
     /* Start just outside the right edge of the container */
   }
   10% {
@@ -567,5 +565,4 @@
       /* Move past the left edge of the container */
     }
   }
->>>>>>> Stashed changes
 }
