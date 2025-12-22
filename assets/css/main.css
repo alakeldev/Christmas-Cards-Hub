@@ -579,15 +579,15 @@
   }
 }
 
-.santa-surfing {
+/* .santa-surfing {
   position: absolute;
   top: 59%;
   right: -100px;
   transform: translateY(-50%) ;
   animation: moveSantaOut 20s linear forwards;
-}
+} */
 
-@keyframes moveSantaOut {
+/* @keyframes moveSantaOut {
   0% {
     right: -460px;
     scale: 60%;
@@ -627,7 +627,7 @@
 
 
   }
-}
+} */
 
 /* ---- Form ---- */
 .form-control {
@@ -912,3 +912,15 @@
     }
   }
 }
+
+
+
+
+/* ------------------- Contact Modal & Toast------------------- */
+ #toastMessage {
+    z-index: 11;
+  }
+
+  .modal-header {
+    background-color: #004d00;
+  }
