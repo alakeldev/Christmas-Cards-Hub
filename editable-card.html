@@ -9,7 +9,7 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
-  <title>EVENTS - Christmas Cards Hub</title>
+  <title>MAKE YOUR CARD - Christmas Cards Hub</title>
 
   <!-- Fontawsome Kit -->
   <script src="https://kit.fontawesome.com/9e128b115a.js" crossorigin="anonymous"></script>
@@ -54,16 +54,17 @@
     </nav>
   </header>
 
-  <main class="flex-grow-1">
+  <main class="flex-grow-1 editable-card-main">
 
     <div class="container-fluid">
       <div class="row align-items-center justify-content-center">
         <div class="col p-5 d-flex justify-content-center">
           <div id="card-container1">
             <div class="text-center mt-4 merry-christmas">Merry Christmas!</div>
-<div class="text-center input-text">
-              from <span id="sender-text">Sender</span> to <span id="receiver-text">Receiver</span>
-            </div>            <i class="fa-regular fa-snowflake snow1"></i>
+              <div class="text-center input-text">
+               from <span id="sender-text">Sender</span> to <span id="receiver-text">Receiver</span>
+              </div>      
+            <i class="fa-regular fa-snowflake snow1"></i>
             <i class="fa-regular fa-snowflake snow2"></i>
             <i class="fa-regular fa-snowflake snow3"></i>
             <i class="fa-regular fa-snowflake snow4"></i>
@@ -75,7 +76,11 @@
 
           </div>
         </div>
-        <div class="col name-input-form p-2">
+        <!-- <div class="col p-5 d-flex justify-content-center"> -->
+
+        
+        <div class="col name-input-form p-5 d-flex justify-content-center">
+          <div>
           <div class="mb-5 form-caption">Use the form below to personalize your card:</div>
           <form>
             <div class="mb-3">
@@ -88,7 +93,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Confirm</button>
           </form>
-
+          </div>
         </div>
 
 

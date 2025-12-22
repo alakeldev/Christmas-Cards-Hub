@@ -394,6 +394,15 @@
 
 /* ---- Card ---- */
 
+
+.editable-card-main {
+    background: url("../images/christmas-background.webp") center 7% / cover no-repeat;
+}
+
+.editable-card-main .container-fluid {
+    max-width: 1200px;
+}
+
 #card-container1 {
   position: relative;
   /* Ensure the container acts as the reference point */
@@ -584,38 +593,37 @@
     scale: 60%;
   }
   10% {
-    top: 57%;
+    top: 55%;
   }
   20% {
-    top: 62%;
+    top: 65%;
   }
   30% {
-    top: 59%;
+    top: 70%;
   }
   40% {
-  top: 65%;
+    top: 75%;
     scale: 110%;
     rotate: calc(10deg);  }
   50% {
-  
-
+    top: 75%;
   }
   60% {
     top: 61%;
   }
   70% {
-    top: 67%;
+    top: 70%;
   }
   80% {
     top: 63%;
   }
   90% {
-    top: 68%;
+    top: 72%;
   }
   100% {
     right: 100%;
     scale: 70%;
-        rotate: calc(10deg);
+    rotate: calc(10deg);
 
 
   }
@@ -632,6 +640,7 @@
   font-weight: 500 !important;
   width: 350px !important;
 }
+
 
 @media (min-width: 576px) {
   #card-container1 {
@@ -740,6 +749,58 @@
       /* Move past the left edge of the container */
     }
   }
+
+
+  /* .santa-surfing {
+    position: absolute;
+    top: 65%;
+    right: -100px;
+    transform: translateY(-50%) scale(0.5);
+    animation: moveSantaOut 18s linear forwards;
+  }
+
+  @keyframes moveSantaOut {
+  0% {
+    right: -460px;
+    scale: 30%;
+  }
+  10% {
+    top: 55%;
+  }
+  20% {
+    top: 65%;
+  }
+  30% {
+    top: 70%;
+  }
+  40% {
+    top: 75%;
+    scale: 50%;
+    rotate: calc(10deg);  }
+  50% {
+    top: 75%;
+  }
+  60% {
+    top: 61%;
+  }
+  70% {
+    top: 70%;
+  }
+  80% {
+    top: 63%;
+  }
+  90% {
+    top: 72%;
+  }
+  100% {
+    right: 100%;
+    scale: 70%;
+    rotate: calc(10deg);
+
+
+  }
+} */
+
 }
 
 
