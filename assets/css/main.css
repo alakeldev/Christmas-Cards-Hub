@@ -480,6 +480,13 @@
   animation: appearText 20s linear forwards;
 }
 
+/* ------------------- Team Section ------------------- */
+.team-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
 @keyframes appearText {
   0% {
     opacity: 0;

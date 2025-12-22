@@ -1368,7 +1368,7 @@ function createControlPanel() {
 	gifFpsInput.id = "gif-fps";
 	gifFpsInput.min = 2;
 	gifFpsInput.max = 30;
-	gifFpsInput.value = 15;
+	gifFpsInput.value = 5;
 	gifFpsInput.style.width = "50px";
 	exportContainer.appendChild(gifFpsInput);
 
@@ -1378,7 +1378,7 @@ function createControlPanel() {
 	downloadGifBtn.style.marginLeft = "8px";
 	downloadGifBtn.addEventListener("click", () => {
 		const dur = Math.max(1, Math.min(30, parseFloat(durationInput.value) || 5));
-		const fps = Math.max(2, Math.min(30, parseInt(gifFpsInput.value) || 15));
+		const fps = Math.max(2, Math.min(30, parseInt(gifFpsInput.value) || 5));
 		startGifExport(dur, fps, downloadGifBtn);
 	});
 	exportContainer.appendChild(downloadGifBtn);
