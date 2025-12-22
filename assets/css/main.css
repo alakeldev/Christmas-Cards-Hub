@@ -242,6 +242,11 @@
     background-color: #004d00;
   }
 
+  .modal-title {
+    color: #ffffff;
+    font-weight: 600;
+  }       
+
   .form-control {
     width: 250px !important;
   }
@@ -428,17 +433,13 @@
   /* Prevent any part of the image from being visible outside the container */
   height: 200px;
   width: 300px;
-  background: url(../images/cards/input-card/card-background.jpg) center / cover no-repeat;
 }
 
-#card-container2 {
-  position: relative;
-  /* Ensure the container acts as the reference point */
-  /* left: calc(50% - 150px); */
-  overflow: hidden;
-  /* Prevent any part of the image from being visible outside the container */
-  height: 200px;
-  width: 300px;
+.tree-card {
+  background: url(../images/cards/input-card/card1-background.jpg) center / cover no-repeat;
+}
+
+.santa-card {
   background: url(../images/cards/input-card/card2-background.jpg) center / cover no-repeat;
 }
 
