@@ -394,7 +394,7 @@
 
 /* ---- Card ---- */
 
-#card-container {
+#card-container1 {
   position: relative;
   /* Ensure the container acts as the reference point */
   /* left: calc(50% - 150px); */
@@ -403,6 +403,17 @@
   height: 200px;
   width: 300px;
   background: url(../images/cards/input-card/card-background.jpg) center / cover no-repeat;
+}
+
+#card-container2 {
+  position: relative;
+  /* Ensure the container acts as the reference point */
+  /* left: calc(50% - 150px); */
+  overflow: hidden;
+  /* Prevent any part of the image from being visible outside the container */
+  height: 200px;
+  width: 300px;
+  background: url(../images/cards/input-card/card2-background.jpg) center / cover no-repeat;
 }
 
 .merry-christmas {
@@ -418,6 +429,14 @@
   font-size: 1rem;
   color: #801414;
   margin-top: 7%;
+  animation: appearText 20s linear forwards;
+}
+
+.input-text2 {
+  font-family: 'Mountains of Christmas';
+  font-size: 1rem;
+  color: #801414;
+  margin-top: 1%;
   animation: appearText 20s linear forwards;
 }
 
@@ -511,6 +530,8 @@
   /* Use forwards to keep the tree out of frame at the end */
 }
 
+
+
 @keyframes moveTreeOut {
   0% {
     right: -460px;
@@ -549,6 +570,57 @@
   }
 }
 
+.santa-surfing {
+  position: absolute;
+  top: 59%;
+  right: -100px;
+  transform: translateY(-50%) ;
+  animation: moveSantaOut 20s linear forwards;
+}
+
+@keyframes moveSantaOut {
+  0% {
+    right: -460px;
+    scale: 60%;
+  }
+  10% {
+    top: 57%;
+  }
+  20% {
+    top: 62%;
+  }
+  30% {
+    top: 59%;
+  }
+  40% {
+  top: 65%;
+    scale: 110%;
+    rotate: calc(10deg);  }
+  50% {
+  
+
+  }
+  60% {
+    top: 61%;
+  }
+  70% {
+    top: 67%;
+  }
+  80% {
+    top: 63%;
+  }
+  90% {
+    top: 68%;
+  }
+  100% {
+    right: 100%;
+    scale: 70%;
+        rotate: calc(10deg);
+
+
+  }
+}
+
 /* ---- Form ---- */
 .form-control {
   width: 250px !important;
@@ -562,7 +634,14 @@
 }
 
 @media (min-width: 576px) {
-  #card-container {
+  #card-container1 {
+    position: relative;
+    /* Ensure the container acts as the reference point */
+    height: 300px;
+    width: 450px;
+  }
+
+   #card-container2 {
     position: relative;
     /* Ensure the container acts as the reference point */
     height: 300px;
@@ -575,7 +654,10 @@
 
   .input-text {
   font-size: 1.5rem;
-  
+}
+
+  .input-text2 {
+  font-size: 1.5rem;
 }
 
   .snow1 {
@@ -662,7 +744,14 @@
 
 
 @media (min-width: 768px) {
-  #card-container {
+  #card-container1 {
+    position: relative;
+    /* Ensure the container acts as the reference point */
+    height: 400px;
+    width: 600px;
+  }
+
+  #card-container2 {
     position: relative;
     /* Ensure the container acts as the reference point */
     height: 400px;
@@ -675,7 +764,10 @@
 
   .input-text {
   font-size: 2rem;
-  
+}
+
+ .input-text2 {
+  font-size: 2rem;
 }
 
   .snow1 {
