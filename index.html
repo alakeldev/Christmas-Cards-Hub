@@ -24,16 +24,26 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Christmas Cards Hub</a>
+        <a class="navbar-brand fw-bold" href="index.html">
+            Christmas Cards Hub
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="mainNavbar">
           <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-            <li class="nav-item"><a class="nav-link" href="editable-card.html">CONTACT US</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">CONTACT US</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -83,7 +93,81 @@
         </div>
       </div>
     </section>
-  </main>
+    </main>
+
+
+    <!-- Contact Modal -->
+<div 
+  class="modal fade" 
+  id="contactModal" 
+  data-bs-backdrop="static" 
+  data-bs-keyboard="false" 
+  tabindex="-1" 
+  aria-labelledby="contactModalLabel" 
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <button 
+          type="button" 
+          class="btn-close" 
+          data-bs-dismiss="modal" 
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body d-flex justify-content-center">
+        <form id="christmasContactForm">
+          <!-- Name Field -->
+          <div class="mb-3">
+            <label class="form-label" for="name">Your Name</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="name" 
+              placeholder="Enter your name" 
+              required
+            />
+          </div>
+          <!-- Email Field -->
+          <div class="mb-3">
+            <label class="form-label" for="email">Your Email</label>
+            <input 
+              type="email" 
+              class="form-control" 
+              id="email" 
+              placeholder="Enter your email" 
+              required
+            />
+          </div>
+          <!-- Message Field -->
+          <div class="mb-3">
+            <label class="form-label" for="message">Your Message</label>
+            <textarea 
+              class="form-control" 
+              id="message" 
+              rows="3" 
+              placeholder="Write your message" 
+              required
+            ></textarea>
+          </div>
+          <!-- Submit Button -->
+          <div class="text-end">
+            <button type="submit" class="btn btn-success">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    
 
   <!-- Footer -->
   <footer class="bg-dark text-light mt-auto">
@@ -110,5 +194,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact-modal.js"></script>
+
 </body>
 </html>
