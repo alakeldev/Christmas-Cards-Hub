@@ -1,3 +1,73 @@
+/* Back button container spacing and style */
+.back-btn-container {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn.btn-light.back-btn-styled {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1.5px solid #0B6623;
+  color: #0B6623;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.btn.btn-light.back-btn-styled:hover, .btn.btn-light.back-btn-styled:focus {
+  background: #0B6623;
+  color: #fff;
+  border-color: #0B6623;
+}
+/* ------------------- Back Button Styles ------------------- */
+.back-btn:hover, .back-btn:focus {
+  background: #0B6623;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 767px) {
+  .back-btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    border-width: 1.5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .back-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.1rem;
+    top: 0.75rem;
+    left: 0.75rem;
+    border-width: 2px;
+  }
+}
+/* ------------------- Back Button Styles ------------------- */
+.back-btn {
+  z-index: 10;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #fff;
+  color: #0B6623;
+  border: 2px solid #0B6623;
+}
+.back-btn:hover, .back-btn:focus {
+  background: #0B6623;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
 /* ------------------- Layout Visualisation ------------------- */
 
 /* .container div,
