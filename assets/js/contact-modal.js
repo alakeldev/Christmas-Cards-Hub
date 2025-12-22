@@ -6,7 +6,10 @@ document.querySelector("#christmasContactForm").addEventListener("submit", funct
   const modal = bootstrap.Modal.getInstance(document.querySelector("#contactModal"));
   modal.hide();
 
-  // Show the toast
+  // Clear all form fields
+  this.reset(); // Resets all the fields in the form
+
+  // Show the toast message
   const toast = document.querySelector("#successToast");
   const toastBootstrap = new bootstrap.Toast(toast);
 

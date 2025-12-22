@@ -233,6 +233,23 @@
   }
 }
 
+/* ------------------- Contact Modal & Toast------------------- */
+ #toastMessage {
+    z-index: 11;
+  }
+
+  .modal-header {
+    background-color: #004d00;
+  }
+
+  .form-control {
+    width: 250px !important;
+  }
+
+  .modal-body {
+        background: url("../images/christmas-background.webp") center 7% / cover no-repeat;
+  }
+
 /* ------------------- Hero Section ------------------- */
 .hero-section {
   min-height: 100vh;
@@ -801,6 +818,7 @@
   }
 } */
 
+
 }
 
 
@@ -911,16 +929,12 @@
       /* Move past the left edge of the container */
     }
   }
+
+   .form-control {
+    width: 400px !important;
+  }
 }
 
 
 
 
-/* ------------------- Contact Modal & Toast------------------- */
- #toastMessage {
-    z-index: 11;
-  }
-
-  .modal-header {
-    background-color: #004d00;
-  }
