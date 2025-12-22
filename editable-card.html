@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>MAKE YOUR CARD - Christmas Cards Hub</title>
+
+  <!-- Fontawsome Kit -->
+  <script src="https://kit.fontawesome.com/9e128b115a.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          Christmas Cards Hub
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="mainNavbar">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1 editable-card-main">
+
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div class="col p-5 d-flex justify-content-center">
+          <div id="card-container1">
+            <div class="text-center mt-4 merry-christmas">Merry Christmas!</div>
+              <div class="text-center input-text">
+               from <span id="sender-text">Sender</span> to <span id="receiver-text">Receiver</span>
+              </div>      
+            <i class="fa-regular fa-snowflake snow1"></i>
+            <i class="fa-regular fa-snowflake snow2"></i>
+            <i class="fa-regular fa-snowflake snow3"></i>
+            <i class="fa-regular fa-snowflake snow4"></i>
+            <i class="fa-regular fa-snowflake snow5"></i>
+
+
+            <img src="assets/images/cards/input-card/people-and-tree.png"
+              alt="and image of four people carrying a Christmas tree" class="people-and-tree">
+
+          </div>
+        </div>
+        <!-- <div class="col p-5 d-flex justify-content-center"> -->
+
+        
+        <div class="col name-input-form p-5 d-flex justify-content-center">
+          <div>
+          <div class="mb-5 form-caption">Use the form below to personalize your card:</div>
+          <form>
+            <div class="mb-3">
+              <label for="sender-name" class="form-label">Sender Name</label>
+              <input type="text" class="form-control" id="sender-name">
+            </div>
+            <div class="mb-3">
+              <label for="receiver-name" class="form-label">Receiver Name</label>
+              <input type="text" class="form-control" id="receiver-name">
+            </div>
+            <button type="submit" class="btn btn-primary">Confirm</button>
+          </form>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light mt-auto">
+    <div class="container py-5">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-6 text-center text-md-start">
+          <h5 class="footer-title mb-3">🎄 Christmas Cards Hub</h5>
+          <p class="footer-text mb-0">
+            A simple and joyful platform to explore, personalize, and share
+            beautiful Christmas cards with your loved ones.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end">
+          <h5 class="footer-title mb-3">Follow Us</h5>
+          <div class="d-flex justify-content-center justify-content-md-end gap-4">
+            <a href="https://www.facebook.com/" class="footer-icon" aria-label="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" class="footer-icon" aria-label="Instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://x.com/" class="footer-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="mailto:test@test.test" class="footer-icon" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="text-center small">
+        © 2025 Christmas Cards Hub. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/editable-card.js"></script>
+
+
+
+</body>
+
+</html>
