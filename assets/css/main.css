@@ -420,7 +420,7 @@
     max-width: 1200px;
 }
 
-#card-container1 {
+.card-container {
   position: relative;
   /* Ensure the container acts as the reference point */
   /* left: calc(50% - 150px); */
@@ -596,31 +596,32 @@
   }
 }
 
-/* .santa-surfing {
+.santa-surfing {
   position: absolute;
-  top: 59%;
-  right: -100px;
-  transform: translateY(-50%) ;
+  top: 31%;
+  right: -170px;
+  transform: translateY(-50%) scale(0.6) ;
   animation: moveSantaOut 20s linear forwards;
-} */
+}
 
-/* @keyframes moveSantaOut {
+@keyframes moveSantaOut {
   0% {
-    right: -460px;
-    scale: 60%;
+    right: -400px;
+    scale: 30%;
   }
   10% {
-    top: 55%;
+    top: 30px;
+    
   }
   20% {
-    top: 65%;
+    top: 15px;
   }
   30% {
     top: 70%;
   }
   40% {
-    top: 75%;
-    scale: 110%;
+    top: 81%;
+    scale: 100%;
     rotate: calc(10deg);  }
   50% {
     top: 75%;
@@ -632,19 +633,17 @@
     top: 70%;
   }
   80% {
-    top: 63%;
+    top: 35%;
   }
   90% {
-    top: 72%;
+    top: 45px;
   }
   100% {
     right: 100%;
-    scale: 70%;
+    scale: 40%;
     rotate: calc(10deg);
-
-
   }
-} */
+}
 
 /* ---- Form ---- */
 .form-control {
@@ -653,14 +652,14 @@
 }
 
 .name-input-form .form-caption {
-  font-size: 1.3rem !important;
-  font-weight: 500 !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
   width: 350px !important;
 }
 
 
 @media (min-width: 576px) {
-  #card-container1 {
+  .card-container {
     position: relative;
     /* Ensure the container acts as the reference point */
     height: 300px;
@@ -768,62 +767,58 @@
   }
 
 
-  /* .santa-surfing {
-    position: absolute;
-    top: 65%;
-    right: -100px;
-    transform: translateY(-50%) scale(0.5);
-    animation: moveSantaOut 18s linear forwards;
-  }
+  .santa-surfing {
+  position: absolute;
+  top: 51%;
+  right: -170px;
+  transform: translateY(-50%) scale(0.8) ;
+  animation: moveSantaOut 20s linear forwards;
+}
 
-  @keyframes moveSantaOut {
+@keyframes moveSantaOut {
   0% {
-    right: -460px;
-    scale: 30%;
+    right: -400px;
+    scale: 55%;
   }
   10% {
-    top: 55%;
+    top: 40%;
+    
   }
   20% {
-    top: 65%;
+    top: 50%;
   }
   30% {
-    top: 70%;
+    top: 40%;
   }
   40% {
-    top: 75%;
-    scale: 50%;
+    top: 63%;
+    scale: 90%;
     rotate: calc(10deg);  }
   50% {
-    top: 75%;
+    top: 40%;
   }
   60% {
-    top: 61%;
+    top: 51%;
   }
   70% {
-    top: 70%;
+    top: 40%;
   }
   80% {
-    top: 63%;
+    top: 50%;
   }
   90% {
-    top: 72%;
+    top: 40%;
   }
   100% {
     right: 100%;
-    scale: 70%;
+    scale: 65%;
     rotate: calc(10deg);
-
-
   }
-} */
-
-
 }
 
 
 @media (min-width: 768px) {
-  #card-container1 {
+  .card-container {
     position: relative;
     /* Ensure the container acts as the reference point */
     height: 400px;
@@ -929,6 +924,55 @@
       /* Move past the left edge of the container */
     }
   }
+
+  .santa-surfing {
+  position: absolute;
+  top: 51%;
+  right: -170px;
+  transform: translateY(-50%) scale(0.8) ;
+  animation: moveSantaOut 20s linear forwards;
+}
+
+@keyframes moveSantaOut {
+  0% {
+    right: -400px;
+    scale: 55%;
+  }
+  10% {
+    top: 40%;
+    
+  }
+  20% {
+    top: 50%;
+  }
+  30% {
+    top: 40%;
+  }
+  40% {
+    top: 73%;
+    scale: 110%;
+    rotate: calc(10deg);  }
+  50% {
+    top: 50%;
+  }
+  60% {
+    top: 61%;
+  }
+  70% {
+    top: 50%;
+  }
+  80% {
+    top: 60%;
+  }
+  90% {
+    top: 50%;
+  }
+  100% {
+    right: 100%;
+    scale: 65%;
+    rotate: calc(10deg);
+  }
+}
 
    .form-control {
     width: 400px !important;
