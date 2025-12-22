@@ -54,7 +54,12 @@
 
 <main class="flex-grow-1 min-vh-100 ">
   <!-- Cards 2D Section -->
- <section class="cards-section py-5 editable-card-main">
+  <section class="cards-section py-5 editable-card-main position-relative">
+    <div class="back-btn-container d-flex justify-content-center gap-2">
+      <a href="index.html" class="btn btn-light back-btn-styled" title="Back to Home">
+        <i class="bi bi-arrow-left"></i> Back
+      </a>
+    </div>
     <canvas id="cardCanvas"></canvas>
   </section>
 </main>
