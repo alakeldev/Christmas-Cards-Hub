@@ -23,34 +23,69 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
-            Christmas Cards Hub
-        </a>
+        <a class="navbar-brand fw-bold" href="index.html">Christmas Cards Hub</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="mainNavbar">
           <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">EVENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT US</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link active" href="events.html">EVENTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="flex-grow-1">
-    <!-- Your page content goes here -->
+  <!-- Main Content -->
+  <main class="flex-grow-1 py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-danger mb-3">🎉 Upcoming Holiday Events 🎉</h2>
+        <p class="text-muted">Join us for these wonderful Christmas celebrations and make unforgettable memories with your loved ones!</p>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="border-radius: 15px; overflow: hidden;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1200&h=600&fit=crop" class="d-block w-100" alt="Christmas Market" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px; bottom: 60px;">
+              <h5 class="fw-bold">Christmas Market & Craft Fair</h5>
+              <p>December 23, 2025 | 10:00 AM - 6:00 PM - Explore local crafts, delicious treats, and festive decorations at our annual Christmas market.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=1200&h=600&fit=crop" class="d-block w-100" alt="Christmas Concert" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px; bottom: 60px;">
+              <h5 class="fw-bold">Holiday Concert & Carol Singing</h5>
+              <p>December 24, 2025 | 7:00 PM - 9:00 PM - Enjoy beautiful Christmas carols performed by local choirs and musicians in a magical setting.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=1200&h=600&fit=crop" class="d-block w-100" alt="Christmas Dinner" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px; bottom: 60px;">
+              <h5 class="fw-bold">Community Christmas Dinner</h5>
+              <p>December 25, 2025 | 12:00 PM - 3:00 PM - Join us for a festive dinner celebration with family, friends, and the community. All are welcome!</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
   </main>
 
   <!-- Footer -->
@@ -60,11 +95,9 @@
         <div class="col-md-6 text-center text-md-start">
           <h5 class="footer-title mb-3">🎄 Christmas Cards Hub</h5>
           <p class="footer-text mb-0">
-            A simple and joyful platform to explore, personalize, and share
-            beautiful Christmas cards with your loved ones.
+            A simple and joyful platform to explore, personalize, and share beautiful Christmas cards with your loved ones.
           </p>
         </div>
-
         <div class="col-md-6 text-center text-md-end">
           <h5 class="footer-title mb-3">Follow Us</h5>
           <div class="d-flex justify-content-center justify-content-md-end gap-4">
@@ -75,20 +108,15 @@
           </div>
         </div>
       </div>
-
       <hr class="border-secondary my-4">
-
-      <div class="text-center small">
-        © 2025 Christmas Cards Hub. All rights reserved.
-      </div>
+      <div class="text-center small">© 2025 Christmas Cards Hub. All rights reserved.</div>
     </div>
   </footer>
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"
   ></script>
-  <script src="assets/js/main.js"></script>
-
 </body>
 </html>
