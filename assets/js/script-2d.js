@@ -13,7 +13,7 @@ resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
 const card = {
-	width: 280,
+	width: 300,
 	height: 410,
 	cornerRadius: 15,
 	glowColor: "#00ff88",
@@ -29,11 +29,11 @@ const card = {
 ,
 	// Text content
 	title: "Merry Christmas",
-	message: "Move your cursor to control the glow effect\nClick to activate magic!",
-	sender: "Card Glow Challenge"
+	message: "May your Christmas be merry and bright!",
+	sender: "Sender Name"
 ,
 	// Toggles for decorative elements
-	showSanta: true,
+	showSanta: false,
 	showTree: true,
 	showRudolph: false
 };
@@ -577,7 +577,7 @@ function drawCardContent() {
 	// 🎄 Christmas Tree (optional)
 	if (card.showTree) {
 		ctx.save();
-		ctx.translate(centerX, centerY + 90);
+		ctx.translate(centerX, centerY - 50);
 		// gentle sway for leaves
 		const treeSway = Math.sin(pulseTime * 1.8) * 0.06;
 		ctx.rotate(treeSway);
@@ -614,7 +614,7 @@ if (card.showTree) {
 // Rudolph (optional): slightly below and to the side of the tree
 if (card.showRudolph) {
 	ctx.save();
-	ctx.translate(0, 140);
+	ctx.translate(40, -30);
 	const rudgle = Math.sin(pulseTime * 2.4) * 6; // small bob
 	ctx.translate(-40 + rudgle, 0);
 	drawRudolph(ctx, activeHue, pulseTime);
@@ -624,11 +624,11 @@ if (card.showRudolph) {
 ctx.restore();
 
 	// Card description (message can include newlines)
-	ctx.fillStyle = "#ccc";
+	ctx.fillStyle = "#fff";
 	ctx.font = "16px Arial";
 	ctx.textAlign = "center";
 	const msgLines = (card.message || "").split('\n');
-	const startY = centerY + 90;
+	const startY = centerY + 100;
 	for (let i = 0; i < msgLines.length; i++) {
 		ctx.fillText(msgLines[i], centerX, startY + i * 24);
 	}
