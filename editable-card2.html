@@ -56,6 +56,8 @@
   <main class="flex-grow-1 editable-card-main">
 
     <div class="container-fluid">
+
+
       <div class="row align-items-center justify-content-center">
         <div class="col p-4 d-flex justify-content-center">
           <div class="card-container santa-card">
@@ -99,10 +101,13 @@
     </div>
   </main>
 
+ 
+  
   <!-- Contact Modal -->
 <div 
   class="modal fade" 
   id="contactModal" 
+  role="dialog" 
   data-bs-backdrop="static" 
   data-bs-keyboard="false" 
   tabindex="-1" 
@@ -170,6 +175,30 @@
     </div>
   </div>
 </div>
+
+<!-- Success Toast -->
+<div 
+  class="toast align-items-center text-bg-success border-0 position-fixed p-1" 
+  id="successToast" 
+  role="alert" 
+  aria-live="assertive" 
+  aria-atomic="true" 
+  style="top: 82px; right: 1%; display: none;"
+>
+  <div class="d-flex">
+    <div class="toast-body text-center">
+      Thank you for sending us a message!
+    </div>
+    <button 
+      type="button" 
+      class="btn-close btn-close-white me-2 m-auto" 
+      data-bs-dismiss="toast" 
+      aria-label="Close"
+    ></button>
+  </div>
+</div>
+
+
 
   <!-- Footer -->
   <footer class="bg-dark text-light mt-auto">
