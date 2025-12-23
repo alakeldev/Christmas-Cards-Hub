@@ -55,7 +55,7 @@ The project was developed using:
 ## Team Members
 - [Abdullah](#)  
 - [Mubashir](#)  
-- [Hana](#)  
+- [Hana](https://github.com/Rubina1978)  
 - [Filippo](https://github.com/filippo-ciucciomei)  
 
 (Replace "#" with respective GitHub personal links.)
