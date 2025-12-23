@@ -379,6 +379,7 @@
   max-width: 600px;
 }
 
+
 #front-card {
   position: relative;
   width: 100%;
@@ -419,6 +420,15 @@
   opacity: 0.2; /* Adjust this value to control the background's transparency */
   z-index: -1; /* Ensures it stays behind the content */
   transition: opacity 0.9s ease; /* Optional transition for a smooth effect */
+}
+
+/* buttons back and share to work on mobile size */
+.screen-message {
+  pointer-events: none;
+}
+
+.screen-message * {
+  pointer-events: auto;
 }
 
 .card-img {
